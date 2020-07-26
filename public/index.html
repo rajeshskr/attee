@@ -8,6 +8,8 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<meta name="author" content="" />
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"/>
+
 
   <!-- Facebook and Twitter integration -->
 	<meta property="og:title" content=""/>
@@ -43,6 +45,15 @@
 	<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 	<!-- Date Picker -->
 	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+	integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+	crossorigin=""/>
+	
+	 <!-- Make sure you put this AFTER Leaflet's CSS -->
+	 <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+	 integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+	 crossorigin=""></script>
 
 	<link rel="stylesheet" href="css/style.css">
 
@@ -57,18 +68,10 @@
 	</head>
 	<body>
 
-	<nav id="colorlib-main-nav" role="navigation">
+	<!-- <nav id="colorlib-main-nav" role="navigation">
 		<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
 		<div class="js-fullheight colorlib-table">
 			<div class="colorlib-table-cell js-fullheight">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3">
-						<div class="form-group">
-							<input type="text" class="form-control" id="search" placeholder="Enter any key to search...">
-							<button type="submit" class="btn btn-primary"><i class="icon-search3"></i></button>
-						</div>
-					</div>
-				</div>
 				<div class="row">
 					<div class="col-md-12 text-center">
 						<ul>
@@ -84,17 +87,17 @@
 				</div>
 			</div>
 		</div>
-	</nav>
+	</nav> -->
 	
 	<div id="colorlib-page">
 		<header>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<div class="colorlib-navbar-brand">
+						<!-- <div class="colorlib-navbar-brand">
 							<a class="colorlib-logo" href="index.html"><i class="flaticon-cutlery"></i><span>Lu</span><span>to</span></a>
-						</div>
-						<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
+						</div> -->
+						<!-- <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a> -->
 					</div>
 				</div>
 			</div>
@@ -112,7 +115,6 @@
 				   						<span class="icon"><i class="flaticon-cutlery"></i></span>
 					   					<h1>Special &amp; Fresh Food</h1>
 					   					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-					   					<p><a href="#" class="btn btn-primary btn-lg btn-learn">Book a table</a></p>
 					   					<div class="desc2"></div>
 				   					</div>
 				   				</div>
@@ -130,7 +132,6 @@
 				   						<span class="icon"><i class="flaticon-cutlery"></i></span>
 					   					<h1>Exquisite Dishes From Chef</h1>
 					   					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-					   					<p><a href="#" class="btn btn-primary btn-lg btn-learn">Book a table</a></p>
 					   					<div class="desc2"></div>
 					   				</div>
 				   				</div>
@@ -148,7 +149,6 @@
 				   						<span class="icon"><i class="flaticon-cutlery"></i></span>
 					   					<h1>We are Delicious Restaurant</h1>
 					   					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-					   					<p><a href="#" class="btn btn-primary btn-lg btn-learn">Book a table</a></p>
 					   					<div class="desc2"></div>
 					   				</div>
 				   				</div>
@@ -166,7 +166,6 @@
 				   						<span class="icon"><i class="flaticon-cutlery"></i></span>
 					   					<h1>Book a table here in our site</h1>
 					   					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-					   					<p><a href="#" class="btn btn-primary btn-lg btn-learn">Book a table</a></p>
 					   					<div class="desc2"></div>
 					   				</div>
 				   				</div>
@@ -180,10 +179,43 @@
 				   	<div class="mouse-wheel"></div>
 				   </a>
 				</div>
-		  	</div>
+			  </div>
+			  <div class="goto-here"></div>
 		</aside>
 
-		<div class="colorlib-intro">
+		<div class="colorlib-about" class="colorlib-light-grey">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="row">
+							<div class="about-desc">
+								<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
+									<span>Welcome to luto</span>
+									<h2>Taste a delicious food here in Italy &amp; We are inspired since 1895</h2>
+								</div>
+								<div class="col-md-12 animate-box">
+									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="row">
+							<div class="col-md-6 animate-box">
+								<div class="about-img" style="background-image: url(images/about.jpg);">
+								</div>
+							</div>
+							<div class="col-md-6 animate-box">
+								<div class="about-img about-img-2" style="background-image: url(images/about-2.jpg);">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- <div class="colorlib-intro">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-3 col-sm-6 text-center">
@@ -226,42 +258,8 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> -->
 
-		<div class="goto-here"></div>
-
-		<div class="colorlib-about" class="colorlib-light-grey">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-5">
-						<div class="row">
-							<div class="about-desc">
-								<div class="col-md-12 col-md-offset-0 animate-box intro-heading">
-									<span>Welcome to luto</span>
-									<h2>Taste a delicious food here in Italy &amp; We are inspired since 1895</h2>
-								</div>
-								<div class="col-md-12 animate-box">
-									<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-7">
-						<div class="row">
-							<div class="col-md-6 animate-box">
-								<div class="about-img" style="background-image: url(images/about.jpg);">
-								</div>
-							</div>
-							<div class="col-md-6 animate-box">
-								<div class="about-img about-img-2" style="background-image: url(images/about-2.jpg);">
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		
 		<div class="colorlib-menu">
 			<div class="container">
 				<div class="row">
@@ -274,6 +272,7 @@
 				<div class="row">
 					<div class="col-md-4 animate-box">
 						<div class="dish-wrap">
+							<p class="price"><span>$25</span></p>
 							<div class="wrap">
 								<div class="dish-img" style="background-image: url(images/dish-1.jpg);"></div>
 								<div class="desc">
@@ -284,6 +283,7 @@
 					</div>
 					<div class="col-md-4 animate-box">
 						<div class="dish-wrap">
+							<p class="price"><span>$25</span></p>
 							<div class="wrap">
 								<div class="dish-img" style="background-image: url(images/dish-2.jpg);"></div>
 								<div class="desc">
@@ -294,6 +294,7 @@
 					</div>
 					<div class="col-md-4 animate-box">
 						<div class="dish-wrap">
+							<p class="price"><span>$25</span></p>
 							<div class="wrap">
 								<div class="dish-img" style="background-image: url(images/dish-3.jpg);"></div>
 								<div class="desc">
@@ -302,39 +303,12 @@
 							</div>
 						</div>
 					</div>
-				</div>
-			</div>
-		</div>
 
-		<div class="colorlib-introduction" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 col-md-push-3">
-						<div class="intro-box animate-box">
-							<h2><a href="#"></a>Foods you love to taste</h2>
-							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
-							<p><a href="https://vimeo.com/channels/staffpicks/93951774" class="btn btn-primary btn-lg btn-outline popup-vimeo"><i class="icon-play3"></i> Watch Video</a></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="colorlib-menu">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
-						<span class="icon"><i class="flaticon-cutlery"></i></span>
-						<h2>Our Delicious Specialties</h2>
-						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
-					</div>
-				</div>
-				<div class="row">
 					<div class="col-md-4 animate-box">
 						<div class="dish-wrap">
+							<p class="price"><span>$25</span></p>
 							<div class="wrap">
-								<div class="dish-img" style="background-image: url(images/dish-1.jpg);"></div>
+								<div class="dish-img" style="background-image: url(images/dish-4.jpg);"></div>
 								<div class="desc">
 									<h2><a href="#">Luto Strawberry Dish</a></h2>
 								</div>
@@ -343,8 +317,9 @@
 					</div>
 					<div class="col-md-4 animate-box">
 						<div class="dish-wrap">
+							<p class="price"><span>$25</span></p>
 							<div class="wrap">
-								<div class="dish-img" style="background-image: url(images/dish-2.jpg);"></div>
+								<div class="dish-img" style="background-image: url(images/dish-5.jpg);"></div>
 								<div class="desc">
 									<h2><a href="#">Pizza with strawberries</a></h2>
 								</div>
@@ -353,8 +328,43 @@
 					</div>
 					<div class="col-md-4 animate-box">
 						<div class="dish-wrap">
+							<p class="price"><span>$25</span></p>
 							<div class="wrap">
-								<div class="dish-img" style="background-image: url(images/dish-3.jpg);"></div>
+								<div class="dish-img" style="background-image: url(images/dish-6.jpg);"></div>
+								<div class="desc">
+									<h2><a href="#">Luto Grilled Beef</a></h2>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 animate-box">
+						<div class="dish-wrap">
+							<p class="price"><span>$25</span></p>
+							<div class="wrap">
+								<div class="dish-img" style="background-image: url(images/dish-7.jpg);"></div>
+								<div class="desc">
+									<h2><a href="#">Luto Strawberry Dish</a></h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="dish-wrap">
+							<p class="price"><span>$25</span></p>
+							<div class="wrap">
+								<div class="dish-img" style="background-image: url(images/dish-8.jpg);"></div>
+								<div class="desc">
+									<h2><a href="#">Pizza with strawberries</a></h2>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 animate-box">
+						<div class="dish-wrap">
+							<p class="price"><span>$25</span></p>
+							<div class="wrap">
+								<div class="dish-img" style="background-image: url(images/dish-9.jpg);"></div>
 								<div class="desc">
 									<h2><a href="#">Luto Grilled Beef</a></h2>
 								</div>
@@ -832,142 +842,140 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-md-12 animate-box text-center">
+						<!-- <div class="col-md-12 animate-box text-center">
 							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost</p>
 							<p><a href="#" class="btn btn-primary btn-outline btn-md">Book a table</a></p>
+						</div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="colorlib-introduction" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+			<div class="overlay"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 col-md-push-3">
+						<div class="intro-box animate-box">
+							<h2><a href="#"></a>Foods you love to taste</h2>
+							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="colorlib-reservation reservation-img" style="background-image: url(images/cover_bg_2.jpg);" data-stellar-background-ratio="0.5">
-			<div class="overlay"></div>
+		<div class="colorlib-about">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
-						<h2>Make A Reservation</h2>
+						<h2>Our Chef</h2>
 						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-8 col-md-offset-2">
-						<div class="row">
-							<div class="col-md-12">
-								<form method="post" class="colorlib-form">
-				              	<div class="row">
-										<div class="col-md-6 animate-box">
-											<div class="form-group">
-												<label for="name">Fullname</label>
-												<div class="form-field">
-													<input type="text" class="form-control" placeholder="name">
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6 animate-box">
-											<div class="form-group">
-												<label for="email">Email</label>
-												<div class="form-field">
-													<input type="text" class="form-control" placeholder="email">
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6 animate-box">
-											<div class="form-group">
-												<label for="phone">Phone</label>
-												<div class="form-field">
-													<input type="text" class="form-control" placeholder="phone">
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6 animate-box">
-											<div class="form-group">
-												<label for="date">Date:</label>
-												<div class="form-field">
-													<i class="icon icon-calendar2"></i>
-													<input type="text" id="date" class="form-control date" placeholder="Date">
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6 animate-box">
-											<div class="form-group">
-												<label for="time">Time</label>
-												<div class="form-field">
-													<i class="icon icon-arrow-down3"></i>
-													<select name="time" id="time" class="form-control">
-														<option value="#">6:30am</option>
-														<option value="#">7:00am</option>
-														<option value="#">7:30am</option>
-														<option value="#">8:00am</option>
-														<option value="#">8:30am</option>
-														<option value="#">9:00am</option>
-														<option value="#">9:30am</option>
-														<option value="#">10:00am</option>
-														<option value="#">10:30am</option>
-														<option value="#">11:00am</option>
-														<option value="#">11:30am</option>
-														<option value="#">12:00am</option>
-														<option value="#">12:30am</option>
-														<option value="#">1:00pm</option>
-														<option value="#">1:30pm</option>
-														<option value="#">2:00pm</option>
-														<option value="#">2:30pm</option>
-														<option value="#">3:00pm</option>
-														<option value="#">3:30pm</option>
-														<option value="#">4:00pm</option>
-														<option value="#">4:30pm</option>
-														<option value="#">5:00pm</option>
-														<option value="#">5:30pm</option>
-														<option value="#">6:00pm</option>
-														<option value="#">6:30pm</option>
-														<option value="#">7:00pm</option>
-														<option value="#">7:30pm</option>
-														<option value="#">8:00pm</option>
-														<option value="#">8:30pm</option>
-														<option value="#">9:00pm</option>
-														<option value="#">9:30pm</option>
-														<option value="#">10:00pm</option>
-														<option value="#">10:30pm</option>
-													</select>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-6 animate-box">
-											<div class="form-group">
-												<label for="person">Person</label>
-												<div class="form-field">
-													<i class="icon icon-arrow-down3"></i>
-													<select name="people" id="people" class="form-control">
-														<option value="#">1</option>
-														<option value="#">2</option>
-														<option value="#">3</option>
-														<option value="#">4</option>
-														<option value="#">5+</option>
-													</select>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-12 animate-box">
-											<div class="row">
-												<div class="col-md-4 col-md-offset-4">
-													<input type="submit" name="submit" id="submit" value="Book a table" class="btn btn-primary btn-block">
-												</div>
-											</div>
-										</div>
-									</div>
-				            </form>
-			           	</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="chef-wrap">
+							<div class="chef-img" style="background-image: url(images/chef-1.jpg);"></div>
+							<div class="desc">
+								<h3>Liam Anderson</h3>
+								<span>Head Chef</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="chef-wrap">
+							<div class="chef-img" style="background-image: url(images/chef-2.jpg);"></div>
+							<div class="desc">
+								<h3>Liam Anderson</h3>
+								<span>Assistant Chef</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="chef-wrap">
+							<div class="chef-img" style="background-image: url(images/chef-3.jpg);"></div>
+							<div class="desc">
+								<h3>Liam Anderson</h3>
+								<span>Assistant Chef</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-3 text-center animate-box">
+						<div class="chef-wrap">
+							<div class="chef-img" style="background-image: url(images/chef-4.jpg);"></div>
+							<div class="desc">
+								<h3>Liam Anderson</h3>
+								<span>Waiter</span>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
+
+		<div id="colorlib-contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-md-offset-3 text-center animate-box intro-heading">
+						<h2>Contact Us</h2>
+						<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 col-md-offset-0">
+						<div class="row">
+							<div class="col-md-4 animate-box">
+								<h3>My Address</h3>
+								<ul class="contact-info">
+									<li><span><i class="icon-map5"></i></span>88 West 21th Street, Suite 721 New York NY 10016</li>
+									<li><span><i class="icon-phone4"></i></span>+ 1235 2355 98</li>
+									<li><span><i class="icon-envelope2"></i></span><a href="#">info@yoursite.com</a></li>
+									<li><span><i class="icon-globe3"></i></span><a href="#">www.yoursite.com</a></li>
+								</ul>
+							</div>
+							<form id="submitform">
+								<div class="col-md-7 col-md-push-1 animate-box">
+									<div class="row">
+										<div class="col-md-12">
+											<div class="form-group">
+												<textarea name="message" class="form-control" id="" cols="30" rows="7" placeholder="Message"></textarea>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input name="name" type="text" class="form-control" placeholder="Name">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input name="email" type="email" class="form-control" placeholder="Email">
+											</div>
+										</div>
+										<div class="col-md-12">
+											<div class="form-group">
+												<button name="submit" type="submit" class="btn btn-primary">Send Message</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</form>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="map" class="colorlib-map"></div>
+
 		<footer>
 			<div id="footer">
 				<div class="container">
-					<div class="row">
-						<div class="col-md-3 col-pb-sm">
+					<!-- <div class="row">
+						<div class="col-md-12 col-pb-sm">
 							<h2>Lutong Bahay</h2>
 							<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind.</p>
 							<p class="colorlib-social-icons">
@@ -977,64 +985,20 @@
 								<a href="#"><i class="icon-dribbble2"></i></a>
 							</p>
 						</div>
-						<div class="col-md-3 col-pb-sm">
-							<h2>Latest Blog</h2>
-							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/dish-5.jpg);"></a>
-								<div class="desc">
-									<span>May 5, 2018</span>
-									<h3><a href="#">How to cook beef Grilled with potato</a></h3>
-								</div>
-							</div>
-							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/dish-7.jpg);"></a>
-								<div class="desc">
-									<span>May 5, 2018</span>
-									<h3><a href="#">A Japanese Master Chef</a></h3>
-								</div>
-							</div>
-							<div class="f-entry">
-								<a href="#" class="featured-img" style="background-image: url(images/dessert-3.jpg);"></a>
-								<div class="desc">
-									<span>May 5, 2018</span>
-									<h3><a href="#">Special Recipe for this month</a></h3>
-								</div>
-							</div>
-						</div>
-						<div class="col-md-3 col-pb-sm">
-							<h2>Instagram</h2>
-							<div class="instagram">
-								<a href="#" class="insta-img" style="background-image: url(images/dessert-1.jpg);"></a>
-								<a href="#" class="insta-img" style="background-image: url(images/dessert-2.jpg);"></a>
-								<a href="#" class="insta-img" style="background-image: url(images/dish-9.jpg);"></a>
-								<a href="#" class="insta-img" style="background-image: url(images/dish-2.jpg);"></a>
-							</div>
-						</div>
-						<div class="col-md-3 col-pb-sm">
-							<h2>Newsletter</h2>
-							<p>A small river named Duden flows by their place and supplies it with the necessary regelialia</p>
-							<div class="subscribe text-center">
-								<div class="form-group">
-									<input type="text" class="form-control text-center" placeholder="Enter Email address">
-									<input type="submit" value="Subscribe" class="btn btn-primary btn-custom">
-								</div>
-							</div>
-						</div>
-					</div>
+					</div> -->
 					<div class="row">
 						<div class="col-md-12 text-center">
 							<p>
 								<span class="block">&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --><br></span> 
-								<span class="block">Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a> &amp; <a href="https://www.pexels.com/" target="_blank">Pexel</a></span>
+								<!-- <span class="block">Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a> &amp; <a href="https://www.pexels.com/" target="_blank">Pexel</a></span> -->
 							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
-	
 	</div>
 
 	<!-- jQuery -->
@@ -1056,19 +1020,23 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 	<script src="js/jquery.flexslider-min.js"></script>
 	<!-- Date Picker -->
 	<script src="js/bootstrap-datepicker.js"></script>
+	<!-- Leaflet Map -->
+	<script src="js/google_map.js"></script>
+	  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+	  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+	<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-analytics.js"></script>
+	
+	  <!-- Add Firebase products that you want to use -->
+	<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.2/jquery-confirm.min.js"></script>
+
 
 	<!-- Main JS (Do not remove) -->
 	<script src="js/main.js"></script>
 
 	</body>
-</html>
-
-===============================================-->
-	<script src="js/main.js"></script>
-
-</body>
-</html>===============================================-->
-	<script src="js/main.js"></script>
-
-</body>
 </html>

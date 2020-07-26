@@ -517,11 +517,12 @@ header {
     #colorlib-contact,
     .colorlib-about {
       padding: 5em 0; } }
+      
 
 .colorlib-intro {
   padding: 2.5em 0;
   clear: both;
-  background: #302939; }
+  background: #fcfcfc; }
   .colorlib-intro .intro {
     position: relative; }
     @media screen and (max-width: 768px) {
@@ -529,15 +530,15 @@ header {
         margin-bottom: 30px; } }
     .colorlib-intro .intro .icon i {
       font-size: 20px;
-      color: white; }
+      color:#404044; }
     .colorlib-intro .intro p, .colorlib-intro .intro span {
       margin: 0;
-      color: rgba(255, 255, 255, 0.6); }
+      color: #404044; }
       .colorlib-intro .intro p a, .colorlib-intro .intro span a {
-        color: white; }
+        color: #404044; }
     .colorlib-intro .intro h2 {
       font-size: 16px;
-      color: #fff;
+      color: #404044;
       margin-bottom: 15px; }
 
 .about-desc {
@@ -1441,13 +1442,13 @@ input[type="text"] {
       height: 200px; } }
 
 #footer {
-  padding: 7em 0;
+  padding: 1em 0;
   display: block;
   width: 100%;
-  background: #303030; }
+  background: #fcfcfc; }
   #footer h2 {
     font-size: 18px;
-    color: #fff;
+    color: rgb(64, 64, 68);;
     letter-spacing: 1px;
     font-weight: 300;
     margin-bottom: 2em; }
@@ -1459,7 +1460,7 @@ input[type="text"] {
     font-size: 24px;
     color: #FF6107; }
   #footer p .block {
-    color: #969696;
+    color: rgb(64, 64, 68);
     font-size: 14px; }
   #footer .subscribe .form-control {
     -webkit-box-shadow: none;

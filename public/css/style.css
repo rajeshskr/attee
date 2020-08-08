@@ -668,6 +668,7 @@ header {
     -ms-border-radius: 50%;
     border-radius: 50%; }
     .dish-wrap .price span {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       display: table-cell;
       vertical-align: middle; }
   .dish-wrap .addtocart {

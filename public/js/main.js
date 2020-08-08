@@ -231,42 +231,30 @@
           jQuery('.alert-success').alert();
           jQuery.confirm({
             title: 'Success',
-            content: 'Data added successfully',
+            content: 'Thanks for submitting your valuable feedback. Its helps us get better',
             type: 'green',
             typeAnimated: true,
             buttons: {
-              // tryAgain: {
-              //   text: 'Try again',
-              //   btnClass: 'btn-red',
-              //   action: function() {
-              //   }
-              // },
-              close: function () {
-
-              }
+              // eslint-disable-next-line no-empty-function
+              close: function () {}
             }
           });
+          // eslint-disable-next-line no-console
           console.log('Document written with ID: ', docRef.id);
         })
         .catch(error => {
           jQuery('.alert-danger').alert();
           jQuery.confirm({
             title: 'Error',
-            content: 'Some Problem in adding the message',
+            content: 'Some technical issue in submitting your feedback. Please try again or report this issue to the attee team',
             type: 'green',
             typeAnimated: true,
             buttons: {
-              // tryAgain: {
-              //   text: 'Try again',
-              //   btnClass: 'btn-red',
-              //   action: function() {
-              //   }
-              // },
-              close: function () {
-
-              }
+              // eslint-disable-next-line no-empty-function
+              close: function () {}
             }
           });
+          // eslint-disable-next-line no-console
           console.error('Error adding document: ', error);
         })
         .finally(() => {

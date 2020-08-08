@@ -1500,3 +1500,9 @@ input[type="text"] {
 
 .js .animate-box {
   opacity: 0; }
+
+  .social-media{
+    height: 40px;
+    width: 40px;
+    margin: 12px;
+  }

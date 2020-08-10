@@ -55,7 +55,7 @@
 	 integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
 	 crossorigin=""></script>
 
-	<link rel="stylesheet" href="css/style-v1.css">
+	<link rel="stylesheet" href="css/style-v2.css">
 
 
 	<!-- Modernizr JS -->
@@ -105,7 +105,7 @@
 		<aside id="colorlib-hero">
 			<div class="flexslider">
 				<ul class="slides">
-			   	<li style="background-image: url(images/background.webp);">
+			   	<li class="header-img">
 			   		<div class="overlay"></div>
 			   		<div class="container-fluid">
 			   			<div class="row">
@@ -268,25 +268,45 @@
 						<h2>Our Delicious Specialties</h2>
 					</div>
 				</div>
+				<!-- <li>
+					<figure class="dish-entry">
+						<div class="dish-img" style="background-image: url(images/drink-10.jpg);"></div>
+					</figure>
+					<div class="text">
+						<span class="price">₹80</span>
+					  <h3>Blueberry Mojitto</h3>
+					  <p class="cat">Mojitto</p>
+					</div>
+				  </li> -->
 				<div class="row">
 					<div class="col-md-4 animate-box">
 						<div class="dish-wrap">
-							<p class="price"><span>₹30</span></p>
+							<p class="price"><span>₹80</span></p>
 							<div class="wrap">
-								<div class="dish-img" style="background-image: url(images/jaamun.png);"></div>
+								<div class="dish-img" style="background-image: url(images/blueberry-mojitto.png);"></div>
 								<div class="desc">
-									<h2>Jaamnun Sharbath</h2>
+									<h2>Blueberry Mojitto</h2>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!-- <li>
+						<figure class="dish-entry">
+							<div class="dish-img" style="background-image: url(images/walnut-brownie.png);"></div>
+						</figure>
+						<div class="text">
+							<span class="price">₹70</span>
+						  <h3>Walnut Brownie Sundae</h3>
+						  <p class="cat">Ice Cream</p>
+						</div>
+					  </li> -->
 					<div class="col-md-4 animate-box">
 						<div class="dish-wrap">
-							<p class="price"><span>₹40</span></p>
+							<p class="price"><span>₹70</span></p>
 							<div class="wrap">
-								<div class="dish-img" style="background-image: url(images/panakam-recipe.jpg);"></div>
+								<div class="dish-img" style="background-image: url(images/walnut-brownie.png);"></div>
 								<div class="desc">
-									<h2>Paanagam</h2>
+									<h2>Walnut Brownie Sundae</h2>
 								</div>
 							</div>
 						</div>
@@ -303,20 +323,31 @@
 						</div>
 					</div>
 
+					<!-- <li>
+						<figure class="dish-entry">
+							<div class="dish-img" style="background-image: url(images/murukku-sandwich.png);"></div>
+						</figure>
+						<div class="text">
+							<span class="price">₹50</span>
+						  <h3>Murukku Sandwich</h3>
+						  <p class="cat">Chat</p>
+						</div>
+					  </li> -->
+
 					<div class="col-md-4 animate-box">
 						<div class="dish-wrap">
 							<p class="price"><span>₹50</span></p>
 							<div class="wrap">
-								<div class="dish-img" style="background-image: url(images/papaya.png);"></div>
+								<div class="dish-img" style="background-image: url(images/murukku-sandwich-1.png);"></div>
 								<div class="desc">
-									<h2>Papaya Mango Pulp</h2>
+									<h2>Murukku Sandwich</h2>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div class="col-md-4 animate-box">
 						<div class="dish-wrap">
-							<p class="price"><span>₹95</span></p>
+							<p class="price"><span>₹90</span></p>
 							<div class="wrap">
 								<div class="dish-img" style="background-image: url(images/freakshake.jpg);"></div>
 								<div class="desc">
@@ -386,112 +417,28 @@
 							<div class="row">
 								<div class="col-md-12 text-center">
 									<ul class="nav nav-tabs text-center" role="tablist">
-										<li role="presentation" class="active"><a href="#main" aria-controls="mains" role="tab" data-toggle="tab">Sandwich</a></li>
-										<li role="presentation"><a href="#chats" aria-controls="chats" role="tab" data-toggle="tab">Chats / Fries</a></li>
-										<li role="presentation"><a href="#drinks" aria-controls="drinks" role="tab" data-toggle="tab">Drinks</a></li>
-										<li role="presentation"><a href="#desserts" aria-controls="desserts" role="tab" data-toggle="tab">Ice Creams</a></li>
+										<li role="presentation" class="active"><a href="#main" aria-controls="mains" role="tab" data-toggle="tab">Chats</a></li>
+										<!-- <li role="presentation"><a href="#chats" aria-controls="chats" role="tab" data-toggle="tab">Chats / Fries</a></li> -->
+										<li role="presentation"><a href="#drinks" aria-controls="drinks" role="tab" data-toggle="tab">Beverages</a></li>
+										<li role="presentation"><a href="#desserts" aria-controls="desserts" role="tab" data-toggle="tab">Chillers</a></li>
 									</ul>
 								</div>
 							</div>
 							<div class="tab-content">
 								<div role="tabpanel" class="tab-pane active" id="main">
 									<div class="row">
-										<div class="col-md-6">
+										<div class="col-md-12">
 											<ul class="menu-dish">
 							              <li>
 							                <figure class="dish-entry">
 							                	<div class="dish-img" style="background-image: url(images/sandwich.jpg);"></div>
 							                </figure>
 							                <div class="text">
-							                  <span class="price">₹30</span>
-							                  <h3>Veg Sandwich</h3>
-							                  <p class="cat">Regular</p>
-							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/sandwich.jpg);"></div>
-							                </figure>
-							                <div class="text">
 							                  <span class="price">₹40</span>
 							                  <h3>Veg Sandwich</h3>
-							                  <p class="cat">Toast / Grilled</p>
-							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/chilli-cheese.jpg);"></div>
-							                </figure>
-							                <div class="text">
-							                  <span class="price">₹40</span>
-							                  <h3>Chilly Cheese</h3>
-							                  <p class="cat">Regular</p>
-							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/chilli-cheese.jpg);"></div>
-							                </figure>
-							                <div class="text">
-							                  <span class="price">₹50</span>
-							                  <h3>Chilly Cheese</h3>
-							                  <p class="cat">Toast / Grilled</p>
-							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/cheese-sandwich.jpg);"></div>
-							                </figure>
-							                <div class="text">
-							                  <span class="price">₹50</span>
-							                  <h3>Cheese Sandwich</h3>
-							                  <p class="cat">Regular</p>
-							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/cheese-sandwich.jpg);"></div>
-							                </figure>
-							                <div class="text">
-							                  <span class="price">₹60</span>
-							                  <h3>Cheese Sandwich</h3>
 							                  <p class="cat">Toast / Grilled</p>
 							                </div>
 										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/butter-cheese.jpg);"></div>
-							                </figure>
-							                <div class="text">
-							                  <span class="price">₹50</span>
-							                  <h3>Butter Cheese</h3>
-							                  <p class="cat">Regular</p>
-							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/butter-cheese.jpg);"></div>
-							                </figure>
-							                <div class="text">
-							                  <span class="price">₹60</span>
-							                  <h3>Butter Cheese</h3>
-							                  <p class="cat">Toast / Grilled</p>
-							                </div>
-							              </li>
-							            </ul>
-										</div>
-										<div class="col-md-6">
-											<ul class="menu-dish">
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/chocolate-sandwich.jpeg);"></div>
-							                </figure>
-							                <div class="text">
-							                  <span class="price">₹50</span>
-							                  <h3>Chocolate</h3>
-							                  <p class="cat">Regular</p>
-							                </div>
-							              </li>
 							              <li>
 							                <figure class="dish-entry">
 							                	<div class="dish-img" style="background-image: url(images/chocolate-sandwich.jpeg);"></div>
@@ -502,56 +449,6 @@
 							                  <p class="cat">Toast / Grilled</p>
 							                </div>
 							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/aloo-masala.jpeg);"></div>
-							                </figure>
-							                <div class="text">
-							                  <span class="price">₹60</span>
-							                  <h3>Aloo Masala Cheese</h3>
-							                  <p class="cat">Regular</p>
-							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/aloo-masala.jpeg);"></div>
-							                </figure>
-							                <div class="text">
-							                  <span class="price">₹70</span>
-							                  <h3>Aloo Masala Cheese</h3>
-							                  <p class="cat">Toast / Grilled</p>
-							                </div>
-										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/corn-cheese.webp);"></div>
-							                </figure>
-							                <div class="text">
-							                  <span class="price">₹60</span>
-							                  <h3>Corn Cheese</h3>
-							                  <p class="cat">Regular</p>
-							                </div>
-										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/corn-cheese.webp);"></div>
-							                </figure>
-							                <div class="text">
-							                  <span class="price">₹70</span>
-							                  <h3>Corn Cheese</h3>
-							                  <p class="cat">Toast / Grilled</p>
-							                </div>
-										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/veg-club.jpg);"></div>
-							                </figure>
-							                <div class="text">
-							                  <span class="price">₹70</span>
-							                  <h3>Veg Club Cheese (3 Slices)</h3>
-							                  <p class="cat">Regular</p>
-							                </div>
-										  </li>
 										  <li>
 							                <figure class="dish-entry">
 							                	<div class="dish-img" style="background-image: url(images/veg-club.jpg);"></div>
@@ -561,17 +458,8 @@
 							                  <h3>Veg Club Cheese (3 Slices)</h3>
 							                  <p class="cat">Toast / Grilled</p>
 							                </div>
-							              </li>
-							            </ul>
-										</div>
-									</div>
-								</div>
-
-								<div role="tabpanel" class="tab-pane" id="chats">
-									<div class="row">
-										<div class="col-md-6">
-											<ul class="menu-dish">
-							              <li>
+										  </li>
+										  <li>
 							                <figure class="dish-entry">
 							                	<div class="dish-img" style="background-image: url(images/pani-puri.jpg);"></div>
 							                </figure>
@@ -580,18 +468,8 @@
 							                  <h3>Pani Puri</h3>
 							                  <p class="cat">Chat</p>
 							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/Bhel-Puri.jpg);"></div>
-							                </figure>
-							                <div class="text">
-							                  <span class="price">₹40</span>
-							                  <h3>Bhel Puri</h3>
-							                  <p class="cat">Chat</p>
-							                </div>
-							              </li>
-							              <li>
+										  </li>
+										  <li>
 							                <figure class="dish-entry">
 							                	<div class="dish-img" style="background-image: url(images/dhai-puri.jpeg);"></div>
 							                </figure>
@@ -600,18 +478,8 @@
 							                  <h3>Dhai Puri</h3>
 							                  <p class="cat">Chat</p>
 							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/sev-puri.jpeg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹40</span>
-							                  <h3>Savee Puri</h3>
-							                  <p class="cat">Chat</p>
-							                </div>
-							              </li>
-							              <li>
+										  </li>
+										  <li>
 							                <figure class="dish-entry">
 							                	<div class="dish-img" style="background-image: url(images/vada-pav.jpg);"></div>
 							                </figure>
@@ -620,42 +488,8 @@
 							                  <h3>Vada Paav</h3>
 							                  <p class="cat">Chat</p>
 							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/dahi-papadi.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹50</span>
-							                  <h3>Dhai Papadi Chat</h3>
-							                  <p class="cat">Chat</p>
-							                </div>
 										  </li>
 										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/murukku-sandwich.png);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹50</span>
-							                  <h3>Murukku Sandwich</h3>
-							                  <p class="cat">Chat</p>
-							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/cheese-pani.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹50</span>
-							                  <h3>Cheese Pani Puri</h3>
-							                  <p class="cat">Chat</p>
-							                </div>
-							              </li>
-							            </ul>
-										</div>
-										<div class="col-md-6">
-											<ul class="menu-dish">
-							              <li>
 							                <figure class="dish-entry">
 							                	<div class="dish-img" style="background-image: url(images/french-fries.jpeg);"></div>
 							                </figure>
@@ -664,28 +498,8 @@
 							                  <h3>French Fries</h3>
 							                  <p class="cat">Fries</p>
 							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/smiley-fries.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹40</span>
-							                  <h3>Smiles</h3>
-							                  <p class="cat">Fries</p>
-							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/cheese-balls.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹40</span>
-							                  <h3>Cheese Balls</h3>
-							                  <p class="cat">Fries</p>
-							                </div>
-							              </li>
-							              <li>
+										  </li>
+										  <li>
 							                <figure class="dish-entry">
 							                	<div class="dish-img" style="background-image: url(images/peri-peri.png);"></div>
 							                </figure>
@@ -695,25 +509,46 @@
 							                  <p class="cat">Fries</p>
 							                </div>
 										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/maya-masala.webp);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹60</span>
-							                  <h3>Mayo Masala Fries</h3>
-							                  <p class="cat">Fries</p>
-							                </div>
-							              </li>
 							            </ul>
 										</div>
 									</div>
+									<!-- </div> -->
 								</div>
 
 								<div role="tabpanel" class="tab-pane" id="drinks">
 									<div class="row">
-										<div class="col-md-6">
+										<div class="col-md-12">
 											<ul class="menu-dish">
+											<li>
+												<figure class="dish-entry">
+													<div class="dish-img" style="background-image: url(images/tea.jpg);"></div>
+												</figure>
+												<div class="text">
+												  <span class="price">₹15</span>
+												  <h3>Tea</h3>
+												  <!-- <p class="cat">Milkshake</p> -->
+												</div>
+											  </li>
+											  <li>
+												<figure class="dish-entry">
+													<div class="dish-img" style="background-image: url(images/coffee.png);"></div>
+												</figure>
+												<div class="text">
+												  <span class="price">₹20</span>
+												  <h3>Coffee</h3>
+												  <!-- <p class="cat">Milkshake</p> -->
+												</div>
+											  </li>
+											  <li>
+												<figure class="dish-entry">
+													<div class="dish-img" style="background-image: url(images/green-tea.jpg);"></div>
+												</figure>
+												<div class="text">
+												  <span class="price">₹20</span>
+												  <h3>Green Tea</h3>
+												  <p class="cat">Milkshake</p>
+												</div>
+											  </li>
 							              <li>
 							                <figure class="dish-entry">
 							                	<div class="dish-img" style="background-image: url(images/applie-shake.jpg);"></div>
@@ -721,26 +556,6 @@
 							                <div class="text">
 							                  <span class="price">₹60</span>
 							                  <h3>Apple Shake</h3>
-							                  <p class="cat">Milkshake</p>
-							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/avacado-shake.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹60</span>
-							                  <h3>Avacado Shake</h3>
-							                  <p class="cat">Milkshake</p>
-							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/chikku-shake.webp);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹60</span>
-							                  <h3>Chikku Shake</h3>
 							                  <p class="cat">Milkshake</p>
 							                </div>
 							              </li>
@@ -756,36 +571,6 @@
 							              </li>
 							              <li>
 							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/mango-smoothie.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹60</span>
-							                  <h3>Mango Shake</h3>
-							                  <p class="cat">Milkshake</p>
-							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/date-shake.png);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹60</span>
-							                  <h3>Dates Shake</h3>
-							                  <p class="cat">Milkshake</p>
-							                </div>
-										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/rose-milk.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹60</span>
-							                  <h3>Rose Milk Shake</h3>
-							                  <p class="cat">Milkshake</p>
-							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
 							                	<div class="dish-img" style="background-image: url(images/strawberry-milkshake.jpg);"></div>
 							                </figure>
 							                <div class="text">
@@ -794,16 +579,6 @@
 							                  <p class="cat">Milkshake</p>
 							                </div>
 							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/badam-milkshake.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹70</span>
-							                  <h3>Badam Shake</h3>
-							                  <p class="cat">Milkshake</p>
-							                </div>
-										  </li>
 										  <li>
 							                <figure class="dish-entry">
 							                	<div class="dish-img" style="background-image: url(images/drink-7.jpg);"></div>
@@ -814,60 +589,11 @@
 							                  <p class="cat">Mojitto</p>
 							                </div>
 										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/drink-10.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹80</span>
-							                  <h3>Blueberry Mojitto</h3>
-							                  <p class="cat">Mojitto</p>
-							                </div>
-										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/rasberry-mojitto.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹80</span>
-							                  <h3>Rasberry Mojitto</h3>
-							                  <p class="cat">Mojitto</p>
-							                </div>
-										  </li>
-							            </ul>
-										</div>
-										<div class="col-md-6">
-											<ul class="menu-dish">
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/drink-1.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹20</span>
-							                  <h3>Lemon</h3>
-							                  <p class="cat">Juice</p>
-							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/mint-lemon.webp);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹25</span>
-							                  <h3>Mint Lemon</h3>
-							                  <p class="cat">Juice</p>
-							                </div>
-							              </li>
-							              <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/ginger-lemon.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹25</span>
-							                  <h3>Ginger Lemon</h3>
-							                  <p class="cat">Juice</p>
-							                </div>
-										  </li>
+							            <!-- </ul>
+										</div> -->
+										<!-- <div class="col-md-6">
+											<ul class="menu-dish"> -->
+
 										  <li>
 							                <figure class="dish-entry">
 							                	<div class="dish-img" style="background-image: url(images/watermelon.jpg);"></div>
@@ -878,36 +604,7 @@
 							                  <p class="cat">Juice</p>
 							                </div>
 										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/musk-melon.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹30</span>
-							                  <h3>Musk Melon</h3>
-							                  <p class="cat">Juice</p>
-							                </div>
-										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/grape-juice.png);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹35</span>
-							                  <h3>Grapes</h3>
-							                  <p class="cat">Juice</p>
-							                </div>
-										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/lassi.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹35</span>
-							                  <h3>Lassi</h3>
-							                  <p class="cat">Juice</p>
-							                </div>
-										  </li>
+										  
 										  <li>
 							                <figure class="dish-entry">
 							                	<div class="dish-img" style="background-image: url(images/mango-lassi.jpg);"></div>
@@ -915,26 +612,6 @@
 							                <div class="text">
 												<span class="price">₹40</span>
 							                  <h3>Mango Lassi</h3>
-							                  <p class="cat">Juice</p>
-							                </div>
-										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/mosambi-juice.png);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹40</span>
-							                  <h3>Mosambi</h3>
-							                  <p class="cat">Juice</p>
-							                </div>
-										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/pomo-juice.png);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹40</span>
-							                  <h3>Pomo</h3>
 							                  <p class="cat">Juice</p>
 							                </div>
 										  </li>
@@ -958,54 +635,14 @@
 							                  <p class="cat">Juice</p>
 							                </div>
 										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/sappota.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹40</span>
-							                  <h3>Sapota (Chikku)</h3>
-							                  <p class="cat">Juice</p>
-							                </div>
-										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/mango-smoothie.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹40</span>
-							                  <h3>Mango</h3>
-							                  <p class="cat">Juice</p>
-							                </div>
-										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/athi.jpg);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹45</span>
-							                  <h3>Athi (Fig)</h3>
-							                  <p class="cat">Juice</p>
-							                </div>
-										  </li>
-										  <li>
-							                <figure class="dish-entry">
-							                	<div class="dish-img" style="background-image: url(images/apple-juice.png);"></div>
-							                </figure>
-							                <div class="text">
-												<span class="price">₹45</span>
-							                  <h3>Apple</h3>
-							                  <p class="cat">Juice</p>
-							                </div>
-							              </li>
-							            </ul>
+							            <!-- </ul> -->
 										</div>
 									</div>
 								</div>
 
 								<div role="tabpanel" class="tab-pane" id="desserts">
 									<div class="row">
-										<div class="col-md-6">
+										<div class="col-md-12">
 											<ul class="menu-dish">
 							              <li>
 							                <figure class="dish-entry">
@@ -1047,10 +684,10 @@
 							                  <p class="cat">Ice Cream</p>
 							                </div>
 										  </li>
-											</ul>
+											<!-- </ul>
 										</div>
 										<div class="col-md-6">
-											<ul class="menu-dish">
+											<ul class="menu-dish"> -->
 												<li>
 													<figure class="dish-entry">
 														<div class="dish-img" style="background-image: url(images/jackfruit-sundae.jpg);"></div>
@@ -1068,16 +705,6 @@
 													<div class="text">
 														<span class="price">₹60</span>
 													  <h3>Blackcurrant Brownie Sundae</h3>
-													  <p class="cat">Ice Cream</p>
-													</div>
-												  </li>
-												  <li>
-													<figure class="dish-entry">
-														<div class="dish-img" style="background-image: url(images/walnut-brownie.png);"></div>
-													</figure>
-													<div class="text">
-														<span class="price">₹70</span>
-													  <h3>Walnut Brownie Sundae</h3>
 													  <p class="cat">Ice Cream</p>
 													</div>
 												  </li>
@@ -1107,7 +734,7 @@
 		</div>
 
 
-		<div class="colorlib-introduction" style="background-image: url(images/cover_bg_1.jpg);" data-stellar-background-ratio="0.5">
+		<div class="colorlib-introduction" style="background-image: url(images/background-2.jpg);" data-stellar-background-ratio="0.5">
 			<div class="overlay"></div>
 			<div class="container">
 				<div class="row">
@@ -1141,7 +768,7 @@
 					</div>
 					<div class="col-md-3 text-center animate-box">
 						<div class="chef-wrap">
-							<div class="chef-img" style="background-image: url(images/team/rohit-2.png);"></div>
+							<div class="chef-img" style="background-image: url(images/team/rohit-1.png);"></div>
 							<div class="desc">
 								<h3>Rohit Kumar</h3>
 								<span>Founder / CEO</span>
